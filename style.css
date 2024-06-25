@@ -40,11 +40,46 @@ body {
   display: inline;
 }
 
+@media screen and (max-width: 400px) {
+  .mobilemenu {
+    position: relative;
+    display: inline-block;
+  }
+  .spreadmenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 767px) {
+  .mobilemenu {
+    display: none;
+  }
+  .spreadmenu {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobilemenu {
+    display: none;
+  }
+  .spreadmenu {
+    display: block;
+  }
+}
+
 
 .button-default:hover {
   background-color: black;
 }
 
+.mobilemenu-content {
+  display: none;
+}
+
+.mobilemenu:hover .mobilemenu-content {
+  display: block;
+}
 
 .header {
   color: white;

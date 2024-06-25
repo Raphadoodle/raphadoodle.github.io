@@ -7,6 +7,15 @@ function copyText(element1) {
     document.getElementById();
 }
 
+function toggle(tagid) {
+    var tag=document.getElementById(tagid).style;
+    if (tag.display === 'block') {
+        tag.display='none';
+    }else if (tag.display === 'none') {
+        tag.display='block';
+    }
+}
+
 function blankOut(buttonid){
     var button = document.getElementById(buttonid);
     button.style = "background-color: #3b362e";
@@ -22,5 +31,7 @@ function getPageName() {
 
 }
 
+
 let pgname=getPageName();
 blankOut(pgname);
+blankOut(pgname+"-mobile");
