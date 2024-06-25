@@ -31,11 +31,12 @@ body {
   font-family: "Saira Semi Condensed";
   color: white;
   background-color: grey;
-  border-radius: 15px;
+  border-radius: 10px;
   width: 100px;
   height: 50px;
   border-color: transparent;
   font-size: 20px;
+  text-decoration: none;
   display: inline;
 }
 
